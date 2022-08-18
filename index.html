@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/nbaAPI.js"></script>
-    <title>Document</title>
+    <script src="assets/js/nasaAPI.js"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<header>
+    <nav>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+    </nav>
+</header>
+<div id="containerInput">
+    <input type="text" placeholder="Realize sua pesquisa" id="inputPesquisa">
+    <Button id="btnPesquisa"><img src="https://www.freeiconspng.com/thumbs/search-icon-png/search-icon-png-21.png"
+            width="20px"></Button>
+</div>
 <body>
-    
+
+<div id="divTimes">
+    <h1 class="times">Resultado: Times</h1>
+</div>
+
+<div id="divJogadores">
+    <h1 class="Jogadores"></h1>
+</div>
+
+
 </body>
+
 </html>
