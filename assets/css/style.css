@@ -1,0 +1,22 @@
+#containerInput{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+
+}
+#inputPesquisa{
+    height: 20px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;;
+
+}
+
+#btnPesquisa{
+    margin-left: -5px;
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
