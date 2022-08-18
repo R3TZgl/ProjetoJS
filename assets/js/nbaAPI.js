@@ -1,12 +1,20 @@
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '63c53d3747msh519bebbba54140dp1225b1jsnd87ea2611268',
-		'X-RapidAPI-Host': 'free-nba.p.rapidapi.com'
-	}
+const headers = new Headers();
+headeres.append("x-apisports-key", "6af85e3c2c76dfeec16dfae15aa5a121")
+headers.append("x-apisports-host", "v1.basketball.api-sports.io")
+
+var requestOptions = {
+	method: "GET",
+	headers: headers,
+	redirect: "follow" 
 };
 
-fetch('https://free-nba.p.rapidapi.com/players?page=0&per_page=25', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));
+let endpoint = document.getElementById("inputPesquisa");
+console.log(`${endpoint}`)
+
+fetch(`https://v1.basketball.api-sports.io/${endpoint}`, requestOptions)
+  .then(response => response.text())
+  .then(result => console.log(result))
+  .catch(error => console.log('error', error));
+
+
+
