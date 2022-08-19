@@ -20,3 +20,20 @@ const pesquisa = () => {
 }
 
 
+const login = [
+  {
+      "nome" : "nba",
+      "senha" : "12345" 
+  }
+
+]
+
+let inputNome = document.getElementById("nome").value;
+let inputSenha = document.getElementById("senha").value;
+
+
+
+
+
+
+
