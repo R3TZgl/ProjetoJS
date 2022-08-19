@@ -11,7 +11,7 @@ body{
     background-position: relative;
     background-repeat: no-repeat;
     background-size: 100%;
-    animation: change 30s infinite ease-in-out;
+    animation: change 60s infinite ease-in-out;
     position: fixed;
     backdrop-filter:grayscale(100%);
 }
@@ -94,10 +94,12 @@ body{
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    font-size: 1.5em;
   }
   
   a:hover {
-    opacity: 0.2;
+    color:rgb(193, 100, 255);
+    text-shadow: 2px 2px 5px;
   }
 
   nav {
