@@ -8,11 +8,18 @@ const dataFor = (dataJson) => {
             setTimeout(function(){
                 window.location.href = "../index.html"
             }, 1000);
-            console.log("a")
+            document.getElementById('Erro').innerText = ""
+            document.getElementById('login').style.border = "2px solid black";
+            document.getElementById('senha').style.border = "2px solid black";
+            document.getElementById('Erro').style.backgroundColor = "transparent";
         }else{
-            alert("Login ou senha inválidos") // Mudar as cores
-        }
+            document.getElementById('Erro').innerText = "Dados de login e/ou senha estão incorretos"
+            document.getElementById('login').style.border = "2px solid red";
+            document.getElementById('Erro').style.backgroundColor = "white";
+            document.getElementById('senha').style.border = "2px solid red";
     }
+}
+
 }
 
 async function testar_login() {
