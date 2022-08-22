@@ -7,7 +7,7 @@ const dataFor = (dataJson) => {
         if(dataJson.senha === senha.value){
             setTimeout(function(){
                 window.location.href = "../index.html"
-            }, 2000);
+            }, 1000);
             console.log("a")
         }else{
             alert("Login ou senha inválidos") // Mudar as cores
@@ -22,5 +22,6 @@ async function testar_login() {
         let dataJson = data;
         console.log(dataJson);
         dataJson.forEach(dataFor);
+        for 
     })
 }
