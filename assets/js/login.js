@@ -22,6 +22,5 @@ async function testar_login() {
         let dataJson = data;
         console.log(dataJson);
         dataJson.forEach(dataFor);
-        for 
     })
 }
