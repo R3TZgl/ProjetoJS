@@ -13,12 +13,23 @@ var anterior = null;
 
 const pesquisa = () => {
   if(document.getElementById("escolha").value !== anterior){
-    var endpoint = document.getElementById("escolha");
-    console.log(`${endpoint.value}`)
-    fetch(`https://v1.basketball.api-sports.io/${endpoint.value}`, requestOptions)
+    var endpoint = document.getElementById("escolha").value;
+    console.log(`${endpoint}`)
+    fetch(`https://v1.basketball.api-sports.io/${endpoint}`, requestOptions)
       .then(response => response.text())
       .then(result => console.log(result))
       .catch(error => console.log('error', error));
-      anterior = endpoint.value;
+      anterior = endpoint;
+
+
   }
+}
+
+const time = (endpoint) => {
+  let dados = document.getElementById("times");
+    dados.innerHTML = `
+    <h1 id="nomeTime">${endpoint.nome}</h1>
+    <img id="imgTime"
+      src="${endpoint.logo}"
+      width="200px" alt=""></img>`
 }
