@@ -15,12 +15,14 @@
     <a class="logo" href="/">NBA SEARCH</a>
     <ul class="nav-list">
       <li><a href="views/login.html">Login</a></li>
-      <li><a href="#"><select name="opcao">
-        <option value="ligas">Ligas</option>
-        <option value="times">Times</option>
-        <option value="temporadas">Temporadas</option>
-        <option value="paises">Países</option>
-      </select></a></li>
+      <li><a href="#">
+        <select name="opcao" id="escolha" onclick="pesquisa()">
+        <option value="leagues">Ligas</option>
+        <option value="teams" selected>Times</option>
+        <option value="seasons">Temporadas</option>
+        <option value="countries">Países</option>
+        </select>
+      </a></li>
       <li><a href="#">Favoritos</a></li>
     </ul>
   </nav>

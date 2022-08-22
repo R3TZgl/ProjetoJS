@@ -9,31 +9,16 @@ var requestOptions = {
 	redirect: "follow" 
 };
 
+var anterior = null;
 
 const pesquisa = () => {
-  let endpoint = document.getElementById("inputPesquisa");
-  console.log(`${endpoint.value}`)
-  fetch(`https://v1.basketball.api-sports.io/${endpoint.value}`, requestOptions)
-    .then(response => response.text())
-    .then(result => console.log(result))
-    .catch(error => console.log('error', error));
-}
-
-
-const login = [
-  {
-      "nome" : "nba",
-      "senha" : "12345" 
+  if(document.getElementById("escolha").value !== anterior){
+    var endpoint = document.getElementById("escolha");
+    console.log(`${endpoint.value}`)
+    fetch(`https://v1.basketball.api-sports.io/${endpoint.value}`, requestOptions)
+      .then(response => response.text())
+      .then(result => console.log(result))
+      .catch(error => console.log('error', error));
+      anterior = endpoint.value;
   }
-
-]
-
-let inputNome = document.getElementById("nome").value;
-let inputSenha = document.getElementById("senha").value;
-
-
-
-
-
-
-
+}
