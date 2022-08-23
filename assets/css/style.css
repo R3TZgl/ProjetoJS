@@ -117,7 +117,7 @@ body{
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background-color:rgba(23, 3, 37, 0.966);
+    background-image: linear-gradient(to right, rgba(70, 27, 100, 0.966) 10%, rgba(23, 3, 37, 0.966));
     height: 8vh;
   }
 
@@ -137,7 +137,7 @@ body{
     font-size: 1em;
     color: white;
     border: none;
-    background-color:rgba(23, 3, 37, 0.966);
+    background-color:rgba(41, 8, 65, 0.966);
     border-radius: 5px;
     border: solid 1px white;
     transition: 0.3s;
