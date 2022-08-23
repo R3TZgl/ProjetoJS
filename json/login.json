@@ -1,42 +1,30 @@
 [
-
-        
     {
-        "nome" : "Gusta",
-        "email" : "gusssouza23@gmail.com",
-        "login" : "gusssouza23",
-        "senha" : "12345", 
-        "status" : 0
+        "nome": "Gusta",
+        "email": "gusssouza23@gmail.com",
+        "login": "gusssouza23",
+        "senha": "12345",
+        "status": 0
     },
-
-
     {
-        "nome" : "Luis",
-        "email" : "luizaoreidelas@yahoo.com",
-        "login" : "TheKing",
-        "senha" : "oUltimoRomantico",
-        "status" : 1
+        "nome": "Luis",
+        "email": "luizaoreidelas@yahoo.com",
+        "login": "TheKing",
+        "senha": "oUltimoRomantico",
+        "status": 1
     },
-
-
     {
-        "nome" : "Gabriel",
-        "email" : "gretzlaff13@gmail.com",
-        "login" : "R3TZyt13",
-        "senha" : "tenisdemesa",
-        "status" : 1
+        "nome": "Gabriel",
+        "email": "gretzlaff13@gmail.com",
+        "login": "R3TZyt13",
+        "senha": "tenisdemesa",
+        "status": 1
     },
-
-
     {
-        "nome" : "Gabriel",
-        "email" : "gabrielcaixeta@gmail.com",
-        "login" : "Caixeta",
-        "senha" : "js_supremacy",
-        "status" : 1 
+        "nome": "Gabriel",
+        "email": "gabrielcaixeta@gmail.com",
+        "login": "Caixeta",
+        "senha": "js_supremacy",
+        "status": 1
     }
 ]
-
-
-
-

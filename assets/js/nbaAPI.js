@@ -4,9 +4,9 @@ headers.append("x-apisports-key", "9d147bb57d54eae6f7ef60f63d6eaa89");
 
 
 var requestOptions = {
-	method: "GET",
-	headers: headers,
-	redirect: "follow" 
+  method: "GET",
+  headers: headers,
+  redirect: "follow"
 };
 
 var anterior = null;
@@ -21,11 +21,11 @@ const pesquisa = () => {
     .then(result => {
       let info = result.response[0];
       console.log(result);
-      if(select === "teams"){
+      if (select === "teams") {
         time(info);
-      }else if(select === "leagues"){
+      } else if (select === "leagues") {
         liga(info);
-      }else if(select === "countries"){
+      } else if (select === "countries") {
         pais(info);
       }
     })
@@ -33,7 +33,7 @@ const pesquisa = () => {
 }
 
 const pesquisaSelect = () => {
-  if(document.getElementById("escolha").value !== anterior){
+  if (document.getElementById("escolha").value !== anterior) {
     var select = document.getElementById("escolha").value;
 
     console.log(`${select}`)
@@ -42,20 +42,20 @@ const pesquisaSelect = () => {
       .then(result => {
         let info = result.response[0];
         console.log(result);
-        if(select === "leagues"){
+        if (select === "leagues") {
           liga(info);
-        }else if(select === "countries"){
+        } else if (select === "countries") {
           pais(info);
         }
       })
       .catch(error => console.log('error', error));
-      anterior = select;
-    }
+    anterior = select;
+  }
 }
 
 const time = (info) => {
   let dados = document.getElementById("times");
-    dados.innerHTML = `
+  dados.innerHTML = `
     <h1 id="nomeTime">${info.name}</h1>
     <img id="imgTime"
       src="${info.logo}"
@@ -66,7 +66,7 @@ const time = (info) => {
 
 const liga = (info) => {
   let dados = document.getElementById("times");
-    dados.innerHTML = `
+  dados.innerHTML = `
     <h1 id="nomeTime">${info.name}</h1>
     <h3>${info.type}</h3>
     <img id="imgTime"
@@ -78,11 +78,11 @@ const liga = (info) => {
 
 const pais = (info) => {
   let dados = document.getElementById("times");
-    dados.innerHTML = `
+  dados.innerHTML = `
     <h1 id="nomeTime">${info.name}</h1>
     <img id="imgTime"
       src="${info.flag}"
-      width="200px" alt=""></img>
+      width="250px" alt=""></img>
       <h3 id="paisFooter">${info.code}</h3>`
 }
 
