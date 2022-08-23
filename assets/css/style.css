@@ -76,7 +76,7 @@ body{
     margin-bottom: 15px;
 }
 
-.times{
+#times{
     background-color: rgba(255, 166, 0, 0.588);
     margin-right:30%;
     margin-left: 30%;
@@ -86,7 +86,7 @@ body{
     margin-bottom: 15px;
 }
 
-.imgTime, .imgJogador{
+#imgTime, .imgJogador{
     padding: 10px;
     border-radius: 2px;
 }
