@@ -121,3 +121,23 @@ body{
     letter-spacing: 3px;
     margin-left: 32px;
   }
+
+
+  #escolha{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1em;
+    color: white;
+    border: none;
+    background-color:rgba(23, 3, 37, 0.966);
+    border-radius: 5px;
+    border: solid 1px white;
+    transition: 0.3s;
+
+  }
+  #escolha:hover{
+    border: solid 1px rgb(193, 100, 255);
+    color:rgb(193, 100, 255);
+    text-shadow: 2px 2px 5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(193, 100, 255);
+  }
