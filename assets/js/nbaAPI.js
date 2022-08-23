@@ -12,25 +12,37 @@ var requestOptions = {
 var anterior = null;
 
 const pesquisa = () => {
+  var select = document.getElementById("escolha").value;
+  let endpoint = document.getElementById("inputPesquisa").value;
+
+  console.log(`${select}`)
+  fetch(`https://v1.basketball.api-sports.io/${select}?name=${endpoint}`, requestOptions)
+    .then(response => response.json())
+    .then(result => {
+      let info = result.response[0];
+      console.log(result);
+      if(select === "teams"){
+        time(info);
+      }else if(select === "leagues"){
+        liga(info);
+      }else if(select === "countries"){
+        pais(info);
+      }
+    })
+    .catch(error => console.log('error', error));
+}
+
+const pesquisaSelect = () => {
   if(document.getElementById("escolha").value !== anterior){
     var select = document.getElementById("escolha").value;
-    let endpoint = document.getElementById("inputPesquisa").value;
-
-    if(endpoint !== ""){
-      var url = `https://v1.basketball.api-sports.io/${select}?name=${endpoint}`;
-    }else{
-      var url = `https://v1.basketball.api-sports.io/${select}`;
-    }
 
     console.log(`${select}`)
-    fetch(url, requestOptions)
+    fetch(`https://v1.basketball.api-sports.io/${select}`, requestOptions)
       .then(response => response.json())
       .then(result => {
         let info = result.response[0];
         console.log(result);
-        if(select === "teams"){
-          time(info);
-        }else if(select === "leagues"){
+        if(select === "leagues"){
           liga(info);
         }else if(select === "countries"){
           pais(info);
@@ -38,9 +50,7 @@ const pesquisa = () => {
       })
       .catch(error => console.log('error', error));
       anterior = select;
-
-
-  }
+    }
 }
 
 const time = (info) => {
