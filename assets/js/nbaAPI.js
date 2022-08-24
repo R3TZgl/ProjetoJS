@@ -57,14 +57,14 @@ const pesquisaSelect = () => {
 const time = (info) => {
   let dados = document.getElementById("times");
   dados.innerHTML = `
-    <span id=displayNome><h1 id="nomeTime">${info.name}<br>
-    <span onclick="trueOrFalse()" class="material-symbols-outlined">favorite</span></h1></span>
+    <span id=displayNome><h1 id="nomeTime">${info.name}</h1><br>
+    <span id="coracaoFav" onclick="favoritos()" class="material-symbols-outlined">favorite</span></span>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <img id="imgTime"
       src="${info.logo}"
       width="200px" alt=""></img>
       <h3 id="paisFooter">${info.country.name}</h3>
-      <img id="bandeiraFooter" src="${info.country.flag}" width="25px"> `
+      <img id="bandeiraFooter" src="${info.country.flag}" width="25px">`
 }
 
 const liga = (info) => {
