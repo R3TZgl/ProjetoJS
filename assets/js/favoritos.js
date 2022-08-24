@@ -1,5 +1,7 @@
 let position = 7;
 
+
+
 const favoritos = () => {
     const nome = document.getElementById("nomeTime").textContent;
     const logo = document.getElementById("imgTime").src;
@@ -37,7 +39,6 @@ const favoritos = () => {
                 procura.status = true;  
             }
 })}   
-
 
 
 
