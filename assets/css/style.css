@@ -24,22 +24,21 @@ body{
     0%
     {
       background-image: url(../../imgs/img1.jpg);
-  }
-  20%
-  {
+    }
+    20%
+    {
       background-image: url(../../imgs/img2.jpg);
-
-  }
-  40%
-  {
+    }
+    40%
+    {
       background-image: url(../../imgs/img3.jpg);
-  }
-  60%
-  {
+    }
+    60%
+    {
       background-image: url(../../imgs/img4.jpg);
-      }
-  80%
-  {
+    }
+    80%
+    {
       background-image: url(../../imgs/img1.jpg);
   }
 }
