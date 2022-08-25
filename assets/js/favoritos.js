@@ -7,7 +7,7 @@ const favoritos = () => {
    const logo = document.getElementById("imgTime").src;
    var status = null;
     
-    fetch("../../json/favoritos.json")
+    fetch("../../ProjetoJS/json/favoritos.json")
     .then(response => response.json())
     .then(result => {
         for(var procura of result){
