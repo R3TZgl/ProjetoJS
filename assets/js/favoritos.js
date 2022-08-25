@@ -3,11 +3,11 @@ let position = 7;
 
 
 const favoritos = () => {
-    const nome = document.getElementById("nomeTime").textContent;
-    const logo = document.getElementById("imgTime").src;
-    var status = null;
+   const nome = document.getElementById("nomeTime").textContent;
+   const logo = document.getElementById("imgTime").src;
+   var status = null;
     
-    fetch("../json/favoritos.json")
+    fetch("../../json/favoritos.json")
     .then(response => response.json())
     .then(result => {
         for(var procura of result){
@@ -38,7 +38,7 @@ const favoritos = () => {
                 console.log("adicionou")
                 procura.status = true;  
             }
-})}   
+     })}   
 
 
 
